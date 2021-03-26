@@ -2,7 +2,7 @@
 [![Version](https://badge.fury.io/js/webgme-user-management-page.svg)](https://www.npmjs.com/package/webgme-user-management-page)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
 
-### A webpage for users to manage their webgme account and projects. 
+### A webpage for users to manage their webgme account and projects.  杨朝钦
 `webgme-user-management-page` runs as a dependency of [webgme](https://github.com/webgme/webgme) and is available at `<host>/profile`
 when [authentication is enabled](https://github.com/webgme/webgme/wiki/Users-and-Authentication). The purpose is to
 allow for registration and login, project authorization of other users/organizations, and creation of
