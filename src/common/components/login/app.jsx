@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 // Self-defined
 import LoginClient from '../../../client/rest_client/loginClient';
+// import logo from './logo.svg';
 
 export default class App extends Component {
 
@@ -32,7 +33,9 @@ export default class App extends Component {
         return (
             <div className="login-box">
                 <div className="login-logo">
-                    <b>GME</b>Profile
+                    {/* <img src={logo} style={{width:"200px"}}/>
+                    <p style={{fontSize:"10pt"}}>Aircraft Concept Evaluation System</p> */}
+                    
                 </div>
 
                 {FormWithBasePath}

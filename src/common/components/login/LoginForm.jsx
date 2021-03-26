@@ -15,6 +15,7 @@ import {Link, withRouter} from 'react-router-dom';
 import LoginField from '../content/widgets/LoginField';
 // Style
 import {LoginForm as STYLE} from '../../../client/style';
+import logo from './logo.svg';
 
 class LoginForm extends Component {
     constructor(props) {
@@ -148,8 +149,10 @@ class LoginForm extends Component {
 
     render() {
         return <div className="login-box-body">
+            
             <p className="login-box-msg">
-                Sign in to start your session
+            <img src={logo} style={{width:"60%",textAlign: 'center'}}/><br/>
+            Aircraft Concept Evaluation System
             </p>
 
             {this.state.hasAdditionalInfo ?
@@ -212,7 +215,7 @@ class LoginForm extends Component {
 
                         {this.state.allowUserRegistration ?
                             <Link to={`${this.props.basePath}register`}>
-                                Register
+                                注册
                             </Link> : null}
                     </div>
                     <div className="col-sm-8">
@@ -234,7 +237,7 @@ class LoginForm extends Component {
                                 <Button
                                     bsStyle="primary"
                                     onClick={this.onClickSignIn}>
-                                    Sign In
+                                    登录
                                 </Button>
                             </ButtonGroup>
 
@@ -254,7 +257,7 @@ class LoginForm extends Component {
                                 <Button
                                     bsStyle="primary"
                                     onClick={this.onClickSignInSmallDevice}>
-                                    Sign In
+                                    登录
                                 </Button>
                             </ButtonGroup>
                         </div>
